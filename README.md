@@ -26,13 +26,14 @@ I then filtered the dataframe to keep only rows where the `league` column contai
 Finally, I dropped any columns that were entirely missing values since they don't contribute any information to the question I'm asking.
 
 ### First Five Rows of the Cleaned Dataframe
-|   result | league   | firstPick   |
-|---------:|:---------|:------------|
-|        1 | LPL      | True        |
-|        0 | LPL      | False       |
-|        0 | LPL      | True        |
-|        1 | LPL      | False       |
-|        0 | LPL      | True        |
+
+| result | league | firstPick |
+|---|---|---|
+| 1 | LPL | True |
+| 0 | LPL | False |
+| 0 | LPL | True |
+| 1 | LPL | False |
+| 0 | LPL | True |
 
 ### Univariate Analysis
 <iframe
@@ -55,12 +56,13 @@ This is a histogram of game length. The distribution is right-skewed, with most 
 This is a grouped bar chart of win rate by side across the 4 major leagues. Across all leagues, the blue side consistently has a slightly higher win rate than the red side. This advantage is most pronounced in the LEC and LPL, while LTA N and LCK show only a minimal difference.
 
 ### Pivot Table
+
 | league | Red | Blue |
-|:-------|------:|-----:|
-| LCK    | 0.490090 | 0.509910 |
-| LEC    | 0.441176 | 0.558824 |
-| LPL    | 0.469565 | 0.530435 |
-| LTA N  | 0.488263 | 0.511737 |
+|---|---:|---:|
+| LCK | 0.490090 | 0.509910 |
+| LEC | 0.441176 | 0.558824 |
+| LPL | 0.469565 | 0.530435 |
+| LTA N | 0.488263 | 0.511737 |
 
 This pivot table confirms the the results I found in the grouped bar chart in my bivariate analysis where the LEC and LPL have a pronounced difference in winrate between Red and Blue while the LTA N and LCK have a difference, but less pronounced.
 
@@ -76,7 +78,7 @@ I tested whether the missingness of `opp_deathsat15` and `split` depended on `ga
 `opp_deathsat15`: The observed difference in mean `gamelength` between non-missing and missing rows was 24.39, with a p-value of 0.018. This suggests that missingness in `opp_deathsat15` is associated with `gamelength`, so it is not MCAR with respect to `gamelength`.
 
 <iframe
-  src='opp_deathsat15-missingness.html'
+  src='assets/opp_deathsat15-missingness.html'
   width='800'
   height='600'
   frameborder='0'
@@ -85,7 +87,7 @@ I tested whether the missingness of `opp_deathsat15` and `split` depended on `ga
 `split`: The observed difference in mean `gamelength` between non-missing and missing rows was 59.15, with a p-value of 0.2085. Since this p-value is not small, there is no strong evidence that missingness in `split` depends on `gamelength`.
 
 <iframe
-  src='split-missingness.html'
+  src='assets/split-missingness.html'
   width='800'
   height='600'
   frameborder='0'
