@@ -42,6 +42,11 @@ Finally, I dropped any columns that were entirely missing values since they don'
   frameborder='0'
 ></iframe>
 
+This is a histogram of game length. The distribution is right-skewed, with most games clustering between roughly 1600 and 2100 units.
+
+### Bivariate Analysis
+
+
 ## Assessment of Missingness
 
 ## Hypothesis Testing
