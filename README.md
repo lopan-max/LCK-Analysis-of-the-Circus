@@ -27,13 +27,13 @@ Finally, I dropped any columns that were entirely missing values since they don'
 
 ### First Five Rows of the Cleaned Dataframe
 
-| result | league | firstPick |
-|---|---|---|
-| 1 | LPL | True |
-| 0 | LPL | False |
-| 0 | LPL | True |
-| 1 | LPL | False |
-| 0 | LPL | True |
+|   result | league   | firstPick   |
+|---------:|:---------|:------------|
+|        1 | LPL      | True        |
+|        0 | LPL      | False       |
+|        0 | LPL      | True        |
+|        1 | LPL      | False       |
+|        0 | LPL      | True        |
 
 ### Univariate Analysis
 <iframe
