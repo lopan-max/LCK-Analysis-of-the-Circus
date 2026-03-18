@@ -36,22 +36,12 @@ Finally, I dropped any columns that were entirely missing values since they don'
 |        0 | LPL      | True        |
 
 ### Univariate Analysis
-<iframe
-  src='assets/distribution-of-game-length.html'
-  width='800'
-  height='600'
-  frameborder='0'
-></iframe>
+<iframe src='assets/distribution-of-game-length.html' width='800' height='600' frameborder='0'></iframe>
 
 This is a histogram of game length. The distribution is right-skewed, with most games clustering between roughly 1600 and 2100 units.
 
 ### Bivariate Analysis
-<iframe
-  src='assets/distribution-of-winrate-by-side.html'
-  width='800'
-  height='600'
-  frameborder='0'
-></iframe>
+<iframe src='assets/distribution-of-winrate-by-side.html' width='800' height='600' frameborder='0'></iframe>
 
 This is a grouped bar chart of win rate by side across the 4 major leagues. Across all leagues, the blue side consistently has a slightly higher win rate than the red side. This advantage is most pronounced in the LEC and LPL, while LTA N and LCK show only a minimal difference.
 
@@ -77,21 +67,11 @@ I tested whether the missingness of `opp_deathsat15` and `split` depended on `ga
 
 `opp_deathsat15`: The observed difference in mean `gamelength` between non-missing and missing rows was 24.39, with a p-value of 0.018. This suggests that missingness in `opp_deathsat15` is associated with `gamelength`, so it is not MCAR with respect to `gamelength`.
 
-<iframe
-  src='assets/opp_deathsat15-missingness.html'
-  width='800'
-  height='600'
-  frameborder='0'
-></iframe>
+<iframe src='assets/opp_deathsat15-missingness.html' width='800' height='600' frameborder='0'></iframe>
 
 `split`: The observed difference in mean `gamelength` between non-missing and missing rows was 59.15, with a p-value of 0.2085. Since this p-value is not small, there is no strong evidence that missingness in `split` depends on `gamelength`.
 
-<iframe
-  src='assets/split-missingness.html'
-  width='800'
-  height='600'
-  frameborder='0'
-></iframe>
+<iframe src='assets/split-missingness.html' width='800' height='600' frameborder='0'></iframe>
 
 ## Hypothesis Testing
 ### Null and Alternative Hypotheses
