@@ -34,6 +34,14 @@ Finally, I dropped any columns that were entirely missing values since they don'
 |        1 | LPL      | False       |
 |        0 | LPL      | True        |
 
+### Univariate Analysis
+<iframe
+  src='assets/distribution-of-game-length.html'
+  width='800'
+  height='600'
+  frameborder='0'
+></iframe>
+
 ## Assessment of Missingness
 
 ## Hypothesis Testing
